@@ -32,3 +32,8 @@ Create the directory structure:
 mkdir -p /opt/flexlm/bin /opt/flexlm/licenses
 ```
 
+## FlexLM Logging
+Log in subdirectory of `/var/log`:
+```
+mkdir -p /var/log/lmgrd
+```
