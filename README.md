@@ -36,4 +36,6 @@ mkdir -p /opt/flexlm/bin /opt/flexlm/licenses
 Log in subdirectory of `/var/log`:
 ```
 mkdir -p /var/log/lmgrd
+chown -R flexlm /var/log/lmgrd
+chmod -R 0744 /var/log/lmgrd
 ```
