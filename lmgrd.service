@@ -1,0 +1,15 @@
+[Unit]
+Description=FlexLM license server daemon
+After=network-online.target
+
+[Service]
+Type=simple
+User=flexlm
+WorkingDirectory=/opt/flexlm
+ExecStart=/opt/flexlm/bin/lmgrd -z -local -reuseaddr -c /opt/flexlm/licenses -l +/var/log/flexlm/lmgrd.log
+SuccessExitStatus=15
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
