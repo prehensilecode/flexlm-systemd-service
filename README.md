@@ -11,3 +11,11 @@ Based on the following:
 * https://www.freedesktop.org/software/systemd/man/systemd.unit.html (man page)
 * http://0pointer.net/blog/projects/systemd-docs.html
 * https://docs.fedoraproject.org/en-US/quick-docs/understanding-and-administering-systemd/
+* https://www.schrodinger.com/kb/1148
+
+## Unprivileged (System) User flexlm
+Create an unprivileged user, e.g. flexlm, to run the service. The following will create the user
+with a home directory /opt/flexlm:
+```bash
+useradd flexlm -b /opt -c "FlexLM User" -s /sbin/nologin --create-home --system 
+```
