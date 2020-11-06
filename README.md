@@ -19,3 +19,16 @@ with a home directory `/opt/flexlm`:
 ```bash
 useradd flexlm -b /opt -c "FlexLM User" -s /sbin/nologin --create-home --system 
 ```
+
+## FlexLM Directory Tree
+Based in `/opt/flexlm`
+* `/opt/flexlm/bin` will contain all executables, except for the vendor daemons. Vendor
+daemons are typically named with the vendor name in all capitals, e.g. "INTEL". (Really,
+the daemons are just copies of `lmgrd`.
+* `/opt/flexlm/licenses` will contain all license files.
+
+Create the directory structure:
+```
+mkdir -p /opt/flexlm/bin /opt/flexlm/licenses
+```
+
