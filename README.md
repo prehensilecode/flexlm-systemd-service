@@ -32,6 +32,16 @@ Create the directory structure:
 mkdir -p /opt/flexlm/bin /opt/flexlm/licenses
 ```
 
+## Install `lmgrd` and Vendor Daemon(s)
+The vendor should have provided a copy of the `lmgrd` executable, along with
+the vendor daemon, say it is called `FOOBAR`. Copy and create the appropriate links (using the `make_flexlm_links.sh` script):
+```
+cp lmgrd /opt/flexlm/bin
+cp FOOBAR /opt/flexlm/bin
+cd /opt/flexlm/bin
+make_flexlm_links.sh
+```
+
 ## Install License Files
 Server license files should be plain text with at `.lic` suffix.
 ```
