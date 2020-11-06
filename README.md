@@ -8,3 +8,4 @@ warranty of fitness for a particular purpose._
 Based on the following:
 * https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6
 * https://gist.github.com/kalebo/fd39edb6c6e4ebed41f7eab2d9925ebc
+* https://www.freedesktop.org/software/systemd/man/systemd.unit.html (man page)
