@@ -15,7 +15,7 @@ Based on the following:
 
 ## Unprivileged (System) User flexlm
 Create an unprivileged user, e.g. flexlm, to run the service. The following will create the user
-with a home directory /opt/flexlm:
+with a home directory `/opt/flexlm`:
 ```bash
 useradd flexlm -b /opt -c "FlexLM User" -s /sbin/nologin --create-home --system 
 ```
