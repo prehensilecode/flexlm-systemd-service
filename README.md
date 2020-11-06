@@ -32,10 +32,26 @@ Create the directory structure:
 mkdir -p /opt/flexlm/bin /opt/flexlm/licenses
 ```
 
+## Install License Files
+Server license files should be plain text with at `.lic` suffix.
+```
+cp FOO.lic /opt/flexlm/licenses
+```
+
 ## FlexLM Logging
 Log in subdirectory of `/var/log`:
 ```
 mkdir -p /var/log/lmgrd
 chown -R flexlm /var/log/lmgrd
 chmod -R 0744 /var/log/lmgrd
+```
+
+## Install Service Definition File
+Copy the `lmgrd.service` file to `/etc/systemd/system/`
+
+## Enable and Start Service
+Use `systemctl` to enable and start the service:
+```
+systemctl enable lmgrd.service
+systemctl start lmgrd.service
 ```
