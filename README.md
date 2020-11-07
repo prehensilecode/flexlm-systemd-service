@@ -65,3 +65,9 @@ Use `systemctl` to enable and start the service:
 systemctl enable lmgrd.service
 systemctl start lmgrd.service
 ```
+
+## Client Setup
+Users who use the license software usually have a particular environment variable
+set which contains the full path to the client license file, which is basically
+bare bones except for a line which specifies the license server, and a line 
+saying "`USE_SERVER`".
